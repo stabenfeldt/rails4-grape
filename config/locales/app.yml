@@ -1,0 +1,10 @@
+nb:
+  roles:
+    project_leader: Prosjektleder
+    worker: Arbeider
+    admin: Admin
+    economy: Økonomi
+  overtime_50: 50% overtid
+  overtime_100: 100% overtid
+  hour: Vanlige timer
+  piecework_hours: Akkordtimer

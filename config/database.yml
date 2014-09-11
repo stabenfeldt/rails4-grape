@@ -1,0 +1,17 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: alliero_orwapp_production
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: alliero_orwapp_test
+  pool: 5
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: alliero_orwapp_development
+  pool: 5

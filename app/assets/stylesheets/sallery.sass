@@ -1,0 +1,33 @@
+#excel_html_export
+  background-color: white
+
+  .outer-frame
+    border: 1px solid lightgray
+    background-color: white
+    height: 400px
+    @include outer-container
+  
+  ul 
+    clear: left
+    li
+      float: left
+      border: 1px solid lightgray
+  
+  .l1c1
+    font-weight: bold
+    .logo
+      background-image: url(image_path('Alliero.jpg'))
+      height: 40px
+      width: 250px
+    
+  
+  .span1
+    @include span-columns(1)
+    @include pad()
+    width: 50px
+  .span2
+    @include span-columns(2)
+    @include pad()
+  .span6
+    @include span-columns(6)
+    @include pad()

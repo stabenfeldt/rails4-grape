@@ -1,0 +1,62 @@
+.outer_container
+  @include outer-container
+
+.profile_image
+  margin-bottom: 50px
+
+.bar
+  background-color: $green
+  height: 10px
+  background-color: green
+  width: 131px
+  margin-bottom: 10px
+
+.menu_header
+  margin-top: 40px
+  color: $dark_blue
+
+.center_column
+  .message_box
+    @include flash($notice-color)
+
+.my_tasks
+  margin-bottom: 50px
+
+#users_show
+  .left_column
+    border-right: 3px solid $green
+  table
+    background-color: white
+    color: $dark_gray
+  .my_tasks
+    ul
+      .fa
+        float: right
+
+aside.left_column
+  @include span-columns(3)
+  padding-right: 20px
+
+.center_column
+  @include span-columns(8)
+  padding-right: 3%
+
+
+
+.listusers
+  width: 100%
+  .username
+    width: 18%
+    padding-left: 19px
+  .phone_number
+    width: 13%
+  .employee_id
+    width: 13%
+  .department
+    width: 18%
+  .role
+    width: 13%
+  .image
+    width: 10%
+  .actions
+    width: 15%

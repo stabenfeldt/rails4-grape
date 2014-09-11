@@ -1,0 +1,14 @@
+--2014-06-11 10:51:38--  http://alliero.eskilsand.no/wp-content/uploads/2012/01/3568357401_b1c9a7e181_o-1000.jpg
+Resolving alliero.eskilsand.no... 46.30.212.57
+Connecting to alliero.eskilsand.no|46.30.212.57|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 160931 (157K) [image/jpeg]
+Saving to: ‘3568357401_b1c9a7e181_o-1000.jpg’
+
+     0K .......... .......... .......... .......... .......... 31%  749K 0s
+    50K .......... .......... .......... .......... .......... 63% 2.08M 0s
+   100K .......... .......... .......... .......... .......... 95%  339K 0s
+   150K .......                                               100% 5.96K=1.4s
+
+2014-06-11 10:51:40 (109 KB/s) - ‘3568357401_b1c9a7e181_o-1000.jpg’ saved [160931/160931]
+

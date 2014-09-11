@@ -1,0 +1,97 @@
+nb:
+  errors:
+    messages:
+      expired: "har utgått, vennligst be om en ny"
+      not_found: "ikke funnet"
+      already_confirmed: "har allerede blitt bekreftet. Prøv å logg inn."
+      not_locked: "var ikke låst"
+      not_saved:
+        one: "Én feil gjorde at %{resource} ikke kunne lagres:"
+        other: "%{count} feil gjorde at %{resource} ikke kunne lagres:"
+  
+  devise:
+    links:
+      sign_in: "Allerede medlem? Logg inn"
+      sign_up: "Har du ikke konto? Bli medlem på Companybook!"
+      confirmation: "Ikke mottatt bekreftelsen?"
+      unlock: "Ikke mottatt kode for å åpne kontoen?"
+      forgot_password: "Glemt passord?"
+    failure:
+      already_authenticated: 'Du er allerede logget inn. Please follow the steps.' # TODO
+      unauthenticated: 'Du må logge inn eller registrere deg for å kunne fortsette.'
+      unconfirmed: 'Du må bekrefte kontoen din for å kunne fortsette.'
+      locked: 'Din konto er låst.'
+      invalid: 'E-post-adresse eller passord er ikke gyldig.'
+      invalid_token: 'Ugyldig autentiserings-token.'
+      timeout: 'Din sesjon er utløpt. Logg inn igjen for å kunne fortsette.'
+      inactive: 'Din konto er ikke aktivert.'
+    sessions:
+      new:
+        sign_in: "Logg inn"
+        email: "E-post"
+        password: "Passord"
+        remember_me: "Husk meg"
+      signed_in: 'Velkommen!'
+      signed_out: 'Du er logget ut'
+    passwords:
+      new:
+        title: "Glemt passord?"
+        email: "Skriv inn ditt mobilnummer"
+        submit: "Send meg tilbakestill passord instruksjoner"
+      send_instructions: 'Du vil snart motta en sms med instruksjoner for å nullstille passordet ditt.'
+      updated: 'Ditt passord er endret og du er nå innlogget.'
+      updated_not_active: 'Ditt passord har blitt endret.'
+      send_paranoid_instructions: "Hvis ditt mobilnummer finnes i databasen vil du motta en sms med en gjennoopprettingslenke."
+    confirmations:
+      new:
+        title: "Send bekreftelsesmail på nytt hvis du ikke har mottatt en"
+        email: "Skriv inn ditt mobilnummer"
+        submit: "Send på nytt nå"
+      send_instructions: 'Du vil snart motta en sms med instruksjoner for å aktivere din konto.'
+      send_paranoid_instructions: 'Hvis ditt mobilnummer finnes i databasen vil du motta en sms i løpet av et par minutter med instruksjoner om hvordan du kan bekrefte din konto.'
+      confirmed: 'Ditt mobilnummer er nå bekreftet. Følg stegene for å fullføre ditt medlemskap.'
+      resend: "Hei! Du har begynt på registreringen tidligere uten å fullføre. Vi har sendt deg en bekreftelse på sms på nytt. Følg instruksjonene i smsen!"
+    registrations:
+      confirm:
+        text: "Ditt mobilnummer har ikke blitt bekreftet enda. Vennligst sjekk mobilen din for å bekrefte den."
+        resend: "Hvis du ikke fikk noen sms, klikk send på nytt for å få bekreftelsesmailen på nytt."
+      new:
+        sign_up: "Bli medlem"
+        catchphrase: "Ditt selskap er allerede oppført, flytt inn nå!"
+        email: "Skriv inn ditt mobilnummer:"
+        email_ideal: "(helst din jobbmail)"
+        sign_up_other: "eller bli medlem via:"
+        submit: "Kom i gang nå"
+      signed_up: 'Velkommen! Din registrering er vellykket.'
+      signed_up_but_unconfirmed: 'En sms med lenke for å bekrefte din adresse er sent. Vennligst åpne lenken for å aktivere din konto.'
+      signed_up_but_inactive: 'Din konto har blitt opprettet. Desverre kunne vi ikke logge deg inn fordi din konto er ikke aktivert enda.'
+      signed_up_but_locked: 'Din konto har blitt opprettet. Desverre kunne vi ikke logge deg inn fordi din konto er sperret.'
+      updated: 'Din profil er oppdatert.'
+      update_needs_confirmation: "Du har oppdatert din konto, men vi trenger å verifisere din nye e-post adresse. Vennligst sjekk mobilen din og klikk bekreftelseslenken for å fullføre oppdateringen av din nye e-post adresse."
+      destroyed: 'Farvel. Din konto er nå slettet.'
+    unlocks:
+      send_instructions: 'Du vil snart motta en sms med instruksjon for å gjenåpne din konto.'
+      unlocked: 'Din konto er gjenåpnet og du er nå innlogget.'
+      send_paranoid_instructions: 'Hvis din konto finnes vil du motta en sms med instruksjoner om hvordan du låser den opp i løpet av et øyeblikk.'
+    omniauth_callbacks:
+      success: 'Vellykket autorisering fra %{kind}.'
+      failure: 'Kunne ikke autorisere deg fra %{kind} fordi "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Bekreftelsesinstruksjoner'
+        title: "Velkommen %{email}!"
+        body: "Du kan bekrefte ditt mobilnummer via lenken nedenfor:"
+        confirm: "Bekreft min konto"
+      reset_password_instructions:
+        subject: 'Nullstilling av passord'
+        title: "Hei %{email}!"
+        someone_requested: "Noen har bedt om en lenke for å endre ditt passord. Du kan endre passordet via lenken nedenfor."
+        change_password: "Endre mitt passord"
+        did_not_request: "Hvis du ikke har bedt om å endre ditt passord, vennligst ignorer denne smsen."
+        will_not_change: "Ditt passord vil ikke bli endret før du klikker på lenken og legger inn et nytt passord."
+      unlock_instructions:
+        subject: 'Gjenåpning av konto'
+        title: "Hei %{email}!"
+        your_account_locked: "Din konto har blitt låst på grunn av for mange forsøk på å logge inn."
+        how_to_unlock: "Klikk på lenken nedenfor for å låse opp din konto:"
+        unlock: "Lås opp min konto"

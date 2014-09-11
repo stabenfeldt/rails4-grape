@@ -1,0 +1,2 @@
+module HoursSpentsHelper
+end

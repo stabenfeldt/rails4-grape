@@ -1,0 +1,48 @@
+#static_pages_blog
+  h5
+    color: $dark_gray
+    margin: 11px 0
+  h3.header
+    font-size: 18px
+    color: $dark_gray
+  section.news
+    @include span-columns(12)
+    margin-bottom: 50px
+    ul li
+      .date
+        font-weight: bold
+        text-transform: uppercase
+        text-align: center
+        @include span-columns(1)
+        width: 4%
+        border-top: 4px solid $light_gray
+        color: $dark_gray
+        font-size: 27px
+        padding-top: 14px
+        margin-right: 20px
+      .day
+        margin-bottom: 8px
+      .month
+        margin-bottom: 5px
+        font-size: 20px
+      .year
+        font-weight: normal
+        font-size: 13px
+      .content
+        @include span-columns(3)
+        margin-right: 20px !important
+
+  em
+    font-style: normal
+    display: block
+
+  section.projects
+    margin-top: 10px
+    padding-top: 10px
+    border-top: 1px dotted $light_gray
+    margin-bottom: 50px
+    @include span-columns(12)
+    li
+      @include span-columns(3)
+      text-align: center
+

@@ -1,0 +1,168 @@
+.flash_message,
+#notice
+  color: $yellow
+  font-weight: bold
+
+a:hover
+  text-decoration: underline
+
+.logo-wrapper
+  background-color: #035091
+  height: 55px
+  h1
+    margin-bottom: 0
+
+
+#top_nav
+  margin-top: 20px
+  height: 55px
+  @include linear-gradient(to top, $green, $dark_green, $fallback: $green)
+  a
+    color: white
+  li
+    padding: 15px 3%
+    &:hover
+      background-color: $dark_blue
+  
+a.muted_text
+  color: $muted_text !important
+
+a
+  color: black
+  &:hover
+    color: black
+
+#header
+  a
+    display: block
+
+ul.timesheets
+  li
+    margin-left: 20px
+
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+  color: black
+
+.button
+  padding: 20px
+  a,
+  strong
+    color: white
+  .fa
+    margin-right: 20px
+
+.new_company
+  padding: 18px 32px
+
+.secondary_button
+  width: 25%
+  padding: 10px
+  text-align: center
+  margin-top: 20px
+  font-weight: bold
+
+
+
+.green
+  color: white
+  background-color: $green
+
+// $search-tools-border-color: $base-border-color
+
+$search-tools-border-color: $dark_blue
+$search-tools-background: lighten($search-tools-border-color, 10)
+
+.action_buttons
+  button
+    margin: 10px 10px 10px 0
+button 
+  @include button(simple, lighten($search-tools-background, 10))
+  a 
+    color: white
+  font-size: .9em
+
+.primary
+  color: white
+  background-color: $dark_blue
+
+.yellow
+  color: white
+  background-color: $yellow
+
+nav
+  margin-top: -15px
+  ul li
+    float: left
+
+.big
+  font-size: 30px
+
+.right
+  float: right
+
+
+.new_tasks_notifier
+  .star
+    color: $yellow
+
+table
+  padding: 20px
+  //background-color: $green
+  //color: white
+  //a
+  //  color: white
+
+form.new_hours_spent
+  padding: 20px
+  background-color: $green
+
+ul.hour_report
+  list-style: disc
+
+span.spacer
+  padding: 8px
+
+.field.radio_group
+  label
+    display: inline
+    margin-right: 20px
+
+.hide
+  display: none
+
+strong span
+  font-weight: normal
+
+.half_size
+  @include span-columns(5)
+  margin-right: 0
+
+.pull_right
+  float: right
+
+.clearfix
+  @include clearfix
+
+.text_align_right
+  text-align: right
+
+.text_align_center
+  text-align: center
+
+hr.dotted
+  border-top: 1px dotted #000 !important
+
+footer
+  .login_logout
+    color: lightgray
+    span,
+    a
+      color: lightgray
+    a
+      text-decoration: underline
