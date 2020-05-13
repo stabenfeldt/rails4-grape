@@ -3,15 +3,15 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+gem 'rails', '5.0.0'
+gem 'rails-i18n', '~> 4.0.2' # For 4.0.x
 gem 'rails_12factor', group: :production
 
-gem 'quiet_assets'
+gem 'quiet_assets', '>= 1.0.2'
 gem 'pg'
 gem 'newrelic_rpm'
 gem 'foreman'
-gem 'passenger'
+gem 'passenger', '>= 4.0.44'
 gem 'thor'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
 gem 'iconv'
@@ -20,19 +20,19 @@ gem 'iconv'
 # API
 gem 'grape', github: 'intridea/grape'
 gem 'grape-entity'
-gem 'grape-swagger'
+gem 'grape-swagger', '>= 0.8.0'
 
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem 'carrierwave'
 gem 'axlsx', '~> 2.0.1'
 
 
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 5.0.5'
 gem 'slim'
-gem 'slim-rails'
-gem 'font-awesome-rails'
+gem 'slim-rails', '>= 3.1.0'
+gem 'font-awesome-rails', '>= 4.5.0.1'
 gem 'bower-rails'
 gem 'neat'
 gem 'bourbon'
@@ -43,19 +43,19 @@ gem 'refills'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-sass-rails'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'jquery-ui-sass-rails', '>= 4.0.3.0'
 
 
 # Turbolinks makes following links in your web application faster. 
 # Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.2.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -71,21 +71,21 @@ gem 'faker'
 gem 'fog'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.14.2'
   gem 'guard-rspec', require: false
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.0.0'
   gem 'binding_of_caller'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.2.8'
 end
 
 group :development do
   gem 'ruby_gntp'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.0', '< 5'
 end
 
 group :test do
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '>= 2.2.1'
   gem 'launchy'
   gem 'selenium-webdriver'
 end
@@ -93,6 +93,6 @@ end
 
 
 group :production do
-  gem 'exception_notification'
+  gem 'exception_notification', '>= 4.0.1'
   gem 'roo' # Used for the Excel import
 end
