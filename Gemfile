@@ -23,7 +23,7 @@ gem 'grape-entity'
 gem 'grape-swagger'
 
 gem 'devise'
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.3.2'
 gem 'axlsx', '~> 2.0.1'
 
 
