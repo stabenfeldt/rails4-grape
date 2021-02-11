@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+gem 'rails', '6.0.3.5'
+gem 'rails-i18n', '~> 4.0.2' # For 4.0.x
 gem 'rails_12factor', group: :production
 
 gem 'quiet_assets'
@@ -80,7 +80,7 @@ end
 
 group :development do
   gem 'ruby_gntp'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.0', '< 5'
 end
 
 group :test do
