@@ -68,12 +68,12 @@ end
 
 gem 'fabrication'
 gem 'faker'
-gem 'fog'
+gem 'fog', '>= 1.23.0'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'meta_request'
 end
@@ -85,7 +85,7 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '>= 2.2.1'
   gem 'launchy'
   gem 'selenium-webdriver'
 end
@@ -94,5 +94,5 @@ end
 
 group :production do
   gem 'exception_notification'
-  gem 'roo' # Used for the Excel import
+  gem 'roo' , '>= 1.13.2' # Used for the Excel import
 end
