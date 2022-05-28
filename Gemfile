@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+gem 'rails', '5.0.0'
+gem 'rails-i18n', '~> 4.0.2' # For 4.0.x
 gem 'rails_12factor', group: :production
 
 gem 'quiet_assets'
@@ -22,17 +22,17 @@ gem 'grape', github: 'intridea/grape'
 gem 'grape-entity'
 gem 'grape-swagger'
 
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem 'carrierwave'
 gem 'axlsx', '~> 2.0.1'
 
 
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 5.0.5'
 gem 'slim'
-gem 'slim-rails'
-gem 'font-awesome-rails'
+gem 'slim-rails', '>= 3.1.0'
+gem 'font-awesome-rails', '>= 4.5.0.1'
 gem 'bower-rails'
 gem 'neat'
 gem 'bourbon'
@@ -43,13 +43,13 @@ gem 'refills'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'jquery-ui-sass-rails'
 
 
@@ -80,7 +80,7 @@ end
 
 group :development do
   gem 'ruby_gntp'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.0', '< 5'
 end
 
 group :test do
