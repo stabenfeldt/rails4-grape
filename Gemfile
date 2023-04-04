@@ -3,15 +3,15 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+gem 'rails', '6.1.7.3'
+gem 'rails-i18n', '~> 4.0.2' # For 4.0.x
 gem 'rails_12factor', group: :production
 
 gem 'quiet_assets'
 gem 'pg'
 gem 'newrelic_rpm'
 gem 'foreman'
-gem 'passenger'
+gem 'passenger', '>= 5.3.2'
 gem 'thor'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
 gem 'iconv'
@@ -22,17 +22,17 @@ gem 'grape', github: 'intridea/grape'
 gem 'grape-entity'
 gem 'grape-swagger'
 
-gem 'devise'
-gem 'carrierwave'
+gem 'devise', '>= 4.7.1'
+gem 'carrierwave', '>= 1.3.2'
 gem 'axlsx', '~> 2.0.1'
 
 
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 6.0.0'
 gem 'slim'
-gem 'slim-rails'
-gem 'font-awesome-rails'
+gem 'slim-rails', '>= 3.1.0'
+gem 'font-awesome-rails', '>= 4.7.0.6'
 gem 'bower-rails'
 gem 'neat'
 gem 'bourbon'
@@ -40,29 +40,29 @@ gem 'bitters'
 gem 'refills'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 2.7.2'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'jquery-ui-sass-rails'
 
 
 # Turbolinks makes following links in your web application faster. 
 # Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 1.5', '>= 1.5.3'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 
 
@@ -73,14 +73,14 @@ gem 'fog'
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'meta_request'
 end
 
 group :development do
   gem 'ruby_gntp'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.0', '< 5'
 end
 
 group :test do
