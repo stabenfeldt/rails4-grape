@@ -85,7 +85,7 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '>= 2.3.0'
   gem 'launchy'
   gem 'selenium-webdriver'
 end
