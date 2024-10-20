@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+gem 'rails', '7.0.0'
+gem 'rails-i18n', '~> 4.0.3' # For 4.0.x
 gem 'rails_12factor', group: :production
 
 gem 'quiet_assets'
@@ -29,7 +29,7 @@ gem 'axlsx', '~> 2.0.1'
 
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 6.0.0'
 gem 'slim'
 gem 'slim-rails'
 gem 'font-awesome-rails'
@@ -55,7 +55,7 @@ gem 'jquery-ui-sass-rails'
 
 # Turbolinks makes following links in your web application faster. 
 # Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -80,7 +80,7 @@ end
 
 group :development do
   gem 'ruby_gntp'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '~> 7.0'
 end
 
 group :test do
