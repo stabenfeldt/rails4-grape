@@ -71,7 +71,7 @@ gem 'faker'
 gem 'fog'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'guard-rspec', require: false
   gem 'better_errors'
   gem 'binding_of_caller'
