@@ -68,7 +68,7 @@ end
 
 gem 'fabrication'
 gem 'faker'
-gem 'fog'
+gem 'fog', '>= 1.37.0'
 
 group :development, :test do
   gem 'rspec-rails'
